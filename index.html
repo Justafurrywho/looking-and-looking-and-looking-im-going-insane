@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Classroom Screen Clone</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Screen Tabs -->
+  <div id="screenTabs"></div>
+
+  <!-- Canvas -->
+  <div id="canvas"></div>
+
+  <!-- Toolbar -->
+  <div id="toolbar">
+    <button id="collapseBtn">▲</button>
+    <div id="tools">
+      <select id="widgetSelect">
+        <option value="">➕ Add widget…</option>
+        <option value="screenShare">Screen Share</option>
+        <option value="setBackground">Background</option>
+        <option value="text">Text</option>
+        <option value="clock">Clock</option>
+        <option value="timer">Timer</option>
+        <option value="visualTimer">Visual Timer</option>
+        <option value="eventCountdown">Countdown</option>
+        <option value="poll">Poll</option>
+        <option value="timetable">Timetable</option>
+        <option value="randomizer">Randomizer</option>
+        <option value="groupMaker">Group Maker</option>
+        <option value="dice">Dice</option>
+        <option value="trafficLight">Traffic Light</option>
+        <option value="scoreboard">Scoreboard</option>
+        <option value="soundLevel">Sound Level</option>
+        <option value="workSymbols">Work Symbols</option>
+        <option value="stickers">Stickers</option>
+        <option value="image">Image</option>
+        <option value="video">Video</option>
+        <option value="embed">Embed</option>
+        <option value="hyperlink">Hyperlink</option>
+        <option value="restroom">Rest Room</option>
+      </select>
+      <button id="selectTool">🔲</button>
+      <button id="annotateTool">✏️</button>
+      <button id="undoBtn">↶</button>
+      <button id="saveBtn">💾</button>
+      <button id="settingsBtn">⚙️</button>
+    </div>
+  </div>
+
+  <!-- Annotation Controls -->
+  <div id="annoControls">
+    <button id="penBtn">✏️</button>
+    <input type="color" id="penColor" value="#e74c3c"/>
+    <input type="range" id="penSize" min="1" max="20" value="4"/>
+    <button id="eraserBtn">🧹</button>
+  </div>
+
+  <!-- Settings Panel -->
+  <div id="settingsPanel">
+    <h3>Theme</h3>
+    <label>Toolbar: <input type="color" id="themeToolbar"/></label>
+    <label>Widget header: <input type="color" id="themeWidget"/></label>
+    <button id="closeSettings">Close</button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
