@@ -198,6 +198,12 @@ document.addEventListener('DOMContentLoaded',()=>{
   document.getElementById('penSize').oninput=e=> annoCtx.lineWidth=e.target.value;
   document.getElementById('eraserBtn').onclick=()=> annoCtx.globalCompositeOperation='destination-out';
 
+  
+  if(const document.getElementById('penBtn').onclick=()=> annoCtx.globalCompositeOperation='source-over';=true
+
+const document.getElementById('eraserBtn').onclick=()=> annoCtx.globalCompositeOperation='destination-out';=false
+
+  
   // Undo
   document.getElementById('undoBtn').onclick=()=>{
     if(!history.length) return;
